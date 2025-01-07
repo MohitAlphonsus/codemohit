@@ -4,6 +4,11 @@
   line-height: var(--lh-md);
 }
 
+.textPrimary strong {
+  font-weight: 500;
+  color: var(--color-primary-tint);
+}
+
 .btn {
   display: inline-block;
   font-size: var(--fs-md-text);

@@ -15,6 +15,7 @@
 
 	/* COLORS */
 	--color-primary: #6c63ff;
+	--color-primary-tint: #A7A1FF;
 	--color-dark-1: #0b0a19;
 	--color-dark-2: #1d203a;
 	--color-light: #F0EFFF;
@@ -58,4 +59,29 @@ body {
 
 .grid-gap-2 {
 	gap: 4rem;
+}
+
+/* margins & paddings */
+.mg-bt-sm {
+	margin-bottom: 2rem;
+}
+
+.mg-bt-md {
+	margin-bottom: 4rem;
+}
+
+.mg-bt-lg {
+	margin-bottom: 6rem;
+}
+
+.mg-bt-xl {
+	margin-bottom: 8rem;
+}
+
+/* headings */
+.heading-secondary {
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
 }
