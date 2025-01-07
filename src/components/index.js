@@ -1,5 +1,5 @@
-import Hero from './Hero';
-import About from './About';
-import Projects from './Projects';
+import Hero from './Hero/Hero';
+import About from './About/About';
+import Project from './Project/Project';
 
-export { Hero, About, Projects };
+export { Hero, About, Project };

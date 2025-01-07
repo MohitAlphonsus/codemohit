@@ -1,7 +1,10 @@
-import btnStyles from './Button.module.css';
+import styles from './UIstyles.module.css';
 
-export default function Button({ children, className }) {
-	const classes = `${btnStyles.btn} ${className}`;
+export default function Button({ children, varient }) {
+	const varientClass =
+		varient === 'primary' ? styles.btnPrimary : styles.btnSecondary;
 
-	return <button className={classes}>{children}</button>;
+	return (
+		<button className={`${styles.btn} ${varientClass}`}>{children}</button>
+	);
 }

@@ -1,0 +1,35 @@
+.hero {
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.heading {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+
+}
+
+.actions {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.tagline {
+  text-transform: uppercase;
+  font-size: var(--fs-x-small-text);
+  letter-spacing: 1px;
+}
+
+.heroImg {
+  width: 100%;
+  position: relative;
+}

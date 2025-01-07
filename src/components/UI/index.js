@@ -1,5 +1,5 @@
-import Button from './Button';
-import ScrollDown from './ScrollDown';
 import TextPrimary from './TextPrimary';
+import Button from './Button';
+import SectionHeading from './SectionHeading';
 
-export { Button, ScrollDown, TextPrimary };
+export { TextPrimary, Button, SectionHeading };

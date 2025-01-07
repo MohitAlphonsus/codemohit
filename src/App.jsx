@@ -1,9 +1,9 @@
-import { Hero } from './components';
-
+import { Hero, About } from './components';
 export default function App() {
 	return (
-		<div>
+		<>
 			<Hero />
-		</div>
+			<About />
+		</>
 	);
 }
