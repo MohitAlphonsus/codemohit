@@ -13,6 +13,8 @@ import {
 	SiFigma,
 } from 'react-icons/si';
 
+export { SiGithub };
+
 export const SKILLS = [
 	{ id: 'skill1', name: 'Html5', icon: SiHtml5 },
 	{ id: 'skill2', name: 'Css3', icon: SiCss3 },
