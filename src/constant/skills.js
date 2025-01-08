@@ -13,7 +13,7 @@ import {
 	SiFigma,
 } from 'react-icons/si';
 
-export const skills = [
+export const SKILLS = [
 	{ id: 'skill1', name: 'Html5', icon: SiHtml5 },
 	{ id: 'skill2', name: 'Css3', icon: SiCss3 },
 	{ id: 'skill3', name: 'JavaScript', icon: SiJavascript },

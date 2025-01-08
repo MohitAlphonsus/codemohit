@@ -1,5 +1,10 @@
+import { SectionHeading } from '../UI';
 import styles from './Project.module.css';
 
 export default function Project() {
-	return <div>Project</div>;
+	return (
+		<section className={styles.project}>
+			<SectionHeading className="mg-bt-xl">Projects</SectionHeading>
+		</section>
+	);
 }
