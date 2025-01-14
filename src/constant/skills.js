@@ -11,9 +11,13 @@ import {
 	SiGit,
 	SiGithub,
 	SiFigma,
+	SiCodepen,
+	SiFacebook,
+	SiInstagram,
+	SiLinkedin,
 } from 'react-icons/si';
 
-export { SiGithub };
+export { SiGithub, SiCodepen, SiFacebook, SiInstagram, SiLinkedin };
 
 export const SKILLS = [
 	{ id: 'skill1', name: 'Html5', icon: SiHtml5 },

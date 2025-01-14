@@ -3,15 +3,22 @@ import styles from './Project.module.css';
 import { SiGithub } from '../../constant/skills';
 
 export default function ProjectCard({ ...project }) {
-	const { title, desc, stacks, projectLink, snapshot } = project;
+	const { title, desc, stacks, projectLink, githubLink, snapshot } = project;
+	const snapshotStyle = {
+		backgroundImage: `url(${snapshot})`,
+	};
 
 	return (
 		<div className={styles.projectCard}>
-			<div role="image" className={styles.projectSnapshot}>
+			<div
+				role="image"
+				className={styles.projectSnapshot}
+				style={snapshotStyle}
+			>
 				&nbsp;
 			</div>
 			<div className={styles.projectContent}>
-				<p>{title}</p>
+				<p className={styles.projectTitle}>{title}</p>
 				<div className={styles.stack}>
 					{stacks.map(stack => (
 						<span key={stack}>{stack}</span>
@@ -19,11 +26,13 @@ export default function ProjectCard({ ...project }) {
 				</div>
 				<TextPrimary>{desc}</TextPrimary>
 				<div className={styles.actions}>
-					<Button>
+					<Button linkHref={githubLink} asLink>
 						<SiGithub style={{ fontSize: '2rem' }} />
 						<span>Github</span>
 					</Button>
-					<Button varient="primary">Visit Website &rarr;</Button>
+					<Button varient="primary" linkHref={projectLink} asLink>
+						Visit Website &rarr;
+					</Button>
 				</div>
 			</div>
 		</div>

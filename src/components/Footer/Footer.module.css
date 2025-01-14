@@ -1,0 +1,34 @@
+.footer {
+  padding-top: 8rem;
+}
+
+.footerContainer {
+  position: relative;
+  padding: 8rem 0;
+  height: 50vh;
+  display: flex;
+}
+
+.footerContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, #2B2866, #6c63ff, #2B2866);
+}
+
+.footerText {
+  font-size: 1.2rem;
+  opacity: .8;
+}
+
+.footerText:last-child {
+  margin-top: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
