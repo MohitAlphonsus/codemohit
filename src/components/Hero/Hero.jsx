@@ -1,12 +1,21 @@
 import styles from './Hero.module.css';
 import heroImg from '../../assets/hero.svg';
 import { TextPrimary, Button, Logo } from '../UI';
+import profile from '../../assets/profile1.jpeg';
+const profileStyle = {
+	backgroundImage: `url(${profile})`,
+};
 
 export default function Hero() {
 	return (
 		<section className={styles.hero}>
 			<div className="container grid grid-2-col grid-gap-2">
-				<Logo forSection="HERO" />
+				<div className={styles.heroLogo}>
+					<div role="image" style={profileStyle}>
+						&nbsp;
+					</div>
+					<Logo forSection="HERO" />
+				</div>
 				<div className={styles.content}>
 					<p className={styles.tagline}>
 						Crafting User-Friendly Web Interfaces

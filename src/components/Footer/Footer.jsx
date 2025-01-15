@@ -1,25 +1,34 @@
-import styles from './Footer.module.css';
 import { Logo, SocialsProfile } from '../UI';
+import styles from './Footer.module.css';
 
 export default function Footer() {
 	const currentYear = new Date().getFullYear();
-
 	return (
 		<footer className={styles.footer}>
 			<div className="container">
-				<div className={styles.footerContainer}>
+				<div className={styles.footerColumns}>
 					<div className={styles.column}>
 						<Logo />
-						<p className={styles.footerText}>
-							Crafting simple lines of code, weaving dreams for the web to
-							behold.
-						</p>
-						<p className={styles.footerText}>
-							&copy; Copyright <span>{currentYear}</span>. Made by Mohit Jadhav
+						<SocialsProfile />
+						<p className={`${styles.footerText} ${styles.copyright}`}>
+							&copy;Copyright {currentYear}. Made by Mohit Jadhav
 						</p>
 					</div>
 					<div className={styles.column}>
-						<SocialsProfile />
+						<span className={styles.title}>Contact</span>
+						<address>
+							<a href="mohitdalphonso@gmail.com" className={styles.footerText}>
+								mohitdalphonso@gmail.com
+							</a>
+							<br />
+							<a href="tel:+919518359623" className={styles.footerText}>
+								+919518359623
+							</a>
+						</address>
+					</div>
+					<div className={styles.column}>
+						<span className={styles.title}>Address</span>
+						<p className={styles.footerText}>Shrirampur, Ahilyanagar, India</p>
 					</div>
 				</div>
 			</div>

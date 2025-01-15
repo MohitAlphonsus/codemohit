@@ -78,7 +78,7 @@
 /* logo */
 
 .logo {
-  --size: 1.8rem;
+  --size: 2rem;
   display: inline-block;
   display: flex;
   align-items: center;
@@ -89,12 +89,7 @@
 }
 
 .logo .divide {
-  font-size: calc(var(--size) * 2);
-}
-
-.logoHero {
-  position: absolute;
-  top: 10%;
+  /* font-size: calc(var(--size) * 2); */
 }
 
 .socials {
