@@ -26,11 +26,16 @@ export default function ProjectCard({ ...project }) {
 				</div>
 				<TextPrimary>{desc}</TextPrimary>
 				<div className={styles.actions}>
-					<Button linkHref={githubLink} asLink>
+					<Button linkHref={githubLink} target="_blank" asLink>
 						<SiGithub style={{ fontSize: '2rem' }} />
 						<span>Github</span>
 					</Button>
-					<Button varient="primary" linkHref={projectLink} asLink>
+					<Button
+						varient="primary"
+						linkHref={projectLink}
+						target="_blank"
+						asLink
+					>
 						Visit Website &rarr;
 					</Button>
 				</div>
