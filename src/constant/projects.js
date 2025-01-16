@@ -26,7 +26,7 @@ export const PROJECTS = [
 		title: 'QuizzyQ',
 		desc: 'Quizz app with four different quizz section. Fun to play and learn to increase knowledge.',
 		stacks: ['React', 'React-Icons', 'React-Router', 'Styled-Component'],
-		projectLink: 'https://quizzyq.netlify.app/quizzapp',
+		projectLink: 'https://quizzyq.netlify.app/',
 		githubLink: 'https://github.com/MohitAlphonsus/QuizzyQ',
 		snapshot: projectQuizzyImg,
 	},
