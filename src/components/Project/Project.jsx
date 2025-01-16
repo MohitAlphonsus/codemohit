@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 
 export default function Project() {
 	return (
-		<section className={styles.project}>
+		<section className={styles.project} id="projects">
 			<div className="container">
 				<SectionHeading className="mg-bt-xl">Projects</SectionHeading>
 				<div className={styles.projectsContainer}>

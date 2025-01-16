@@ -1,28 +1,7 @@
 .hero {
-  height: 100dvh;
+  height: calc(100vh - 4rem);
   display: grid;
   place-content: center;
-  position: relative;
-}
-
-.heroLogo {
-  position: absolute;
-  top: 10%;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.heroLogo div {
-  display: inline-block;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  background-size: cover;
-  outline: 4px solid var(--color-primary);
-  outline-offset: .2rem;
 }
 
 .content {
@@ -36,7 +15,6 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
-
 }
 
 .actions {
@@ -52,5 +30,38 @@
 
 .heroImg {
   width: 100%;
-  position: relative;
+}
+
+/* 1160px */
+@media(max-width:72.5em) {
+  .heading {
+    font-size: 5rem;
+  }
+}
+
+/* 990px */
+@media(max-width:62em) {
+  .hero {
+    height: 100%;
+    padding-top: 8rem;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .heroImg {
+    width: 70%;
+  }
+}
+
+@media(max-width:31.25em) {
+  .actions {
+    flex-direction: column;
+  }
 }

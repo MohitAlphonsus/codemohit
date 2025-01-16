@@ -9,7 +9,7 @@
 }
 
 .projectCard {
-  border: 1px solid #34364E;
+  border: 1px solid #201E4C;
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -18,10 +18,10 @@
 }
 
 .projectSnapshot {
-  border: 1px solid #34364E;
   height: 30rem;
   width: calc(100% - 20%);
   border-radius: 11px;
+  overflow: hidden;
 
   /* for snapshot */
   background-repeat: no-repeat;
@@ -63,4 +63,20 @@
 .actions {
   display: flex;
   gap: 2rem;
+}
+
+@media(max-width:50em) {
+  .projectCard {
+    flex-direction: column;
+  }
+
+  .projectSnapshot {
+    width: 100%;
+  }
+}
+
+@media(max-width:31.25em) {
+  .projectSnapshot {
+    height: 25rem;
+  }
 }

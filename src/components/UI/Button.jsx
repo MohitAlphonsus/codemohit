@@ -1,6 +1,12 @@
 import styles from './UIstyles.module.css';
 
-export default function Button({ children, varient, asLink, linkHref }) {
+export default function Button({
+	children,
+	varient,
+	asLink,
+	linkHref,
+	target,
+}) {
 	const varientClass =
 		varient === 'primary' ? styles.btnPrimary : styles.btnSecondary;
 	if (asLink) {
@@ -8,7 +14,7 @@ export default function Button({ children, varient, asLink, linkHref }) {
 			<a
 				href={linkHref}
 				className={`${styles.btn} ${varientClass}`}
-				target="_blank"
+				target={target}
 			>
 				{children}
 			</a>

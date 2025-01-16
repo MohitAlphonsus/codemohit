@@ -1,21 +1,13 @@
 import styles from './Hero.module.css';
 import heroImg from '../../assets/hero.svg';
-import { TextPrimary, Button, Logo } from '../UI';
-import profile from '../../assets/profile1.jpeg';
-const profileStyle = {
-	backgroundImage: `url(${profile})`,
-};
+import { TextPrimary, Button } from '../UI';
+const RESUMELINK =
+	'https://drive.google.com/file/d/1Wl5N91MO_UQQGJJw7zxhq9ZujgLIr9gU/view?usp=drive_link';
 
 export default function Hero() {
 	return (
 		<section className={styles.hero}>
 			<div className="container grid grid-2-col grid-gap-2">
-				<div className={styles.heroLogo}>
-					<div role="image" style={profileStyle}>
-						&nbsp;
-					</div>
-					<Logo forSection="HERO" />
-				</div>
 				<div className={styles.content}>
 					<p className={styles.tagline}>
 						Crafting User-Friendly Web Interfaces
@@ -27,8 +19,12 @@ export default function Hero() {
 						experiences.&quot;
 					</TextPrimary>
 					<div className={styles.actions}>
-						<Button varient="primary">My Projects</Button>
-						<Button>Download CV</Button>
+						<Button varient="primary" linkHref="#projects" asLink>
+							My Projects
+						</Button>
+						<Button linkHref={RESUMELINK} asLink target="_blank">
+							Download CV
+						</Button>
 					</div>
 				</div>
 

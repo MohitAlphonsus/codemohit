@@ -1,0 +1,29 @@
+nav {
+  padding-top: 4rem;
+}
+
+.heroLogo {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroLogo div {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-size: cover;
+  outline: 2px solid var(--color-primary);
+  outline-offset: .4rem;
+}
+
+@media(max-width:62em) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

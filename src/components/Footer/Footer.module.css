@@ -47,3 +47,25 @@
 .copyright {
   margin-top: 4rem;
 }
+
+@media(max-width:50em) {
+  .footerColumns {
+    grid-template-columns: 1fr;
+    align-content: start;
+    justify-items: start;
+    gap: 4rem;
+  }
+
+  .footerColumns> :first-child {
+    order: 1;
+    margin-top: 2rem;
+  }
+
+  .column {
+    gap: 1rem;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+}

@@ -59,8 +59,31 @@
   letter-spacing: 1px;
   opacity: .8;
   margin-bottom: 1rem;
+  font-size: var(--fs-md-text);
 }
 
 .educationCard span {
   font-size: var(--fs-small-text);
+}
+
+@media(max-width:62em) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .education {
+    flex-direction: row;
+  }
+}
+
+@media(max-width:50em) {
+  .education {
+    flex-direction: column;
+  }
+}
+
+@media(max-width:31.25em) {
+  .aboutContent {
+    text-align: center;
+  }
 }
