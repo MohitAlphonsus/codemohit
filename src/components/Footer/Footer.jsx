@@ -17,7 +17,10 @@ export default function Footer() {
 					<div className={styles.column}>
 						<span className={styles.title}>Contact</span>
 						<address>
-							<a href="mohitdalphonso@gmail.com" className={styles.footerText}>
+							<a
+								href="mailto:mohitdalphonso@gmail.com"
+								className={styles.footerText}
+							>
 								mohitdalphonso@gmail.com
 							</a>
 							<a href="tel:+919518359623" className={styles.footerText}>
