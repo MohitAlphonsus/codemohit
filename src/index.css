@@ -16,11 +16,16 @@
 	/* COLORS */
 	--color-primary: #6c63ff;
 	--color-primary-tint: #A7A1FF;
+	--color-primary-shade: #201E4C;
 	--color-dark-1: #0b0a19;
 	--color-dark-2: #1d203a;
 	--color-light: #F0EFFF;
 
 	--gradient: linear-gradient(to right bottom, var(--color-dark-1), var(--color-dark-2));
+
+	--primary-gradient: linear-gradient(to right, #2B2866, #6c63ff, #2B2866);
+
+	--mask-overlay: linear-gradient(to right, transparent, white 20% 80%, transparent);
 
 }
 

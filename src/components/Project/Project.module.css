@@ -9,7 +9,7 @@
 }
 
 .projectCard {
-  border: 1px solid #201E4C;
+  border: 1px solid var(--color-primary-shade);
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -48,6 +48,7 @@
 .stack {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -78,5 +79,15 @@
 @media(max-width:31.25em) {
   .projectSnapshot {
     height: 25rem;
+  }
+}
+
+@media(max-width:23.44em) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions>* {
+    width: 100%;
   }
 }

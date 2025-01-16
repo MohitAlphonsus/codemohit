@@ -64,4 +64,18 @@
   .actions {
     flex-direction: column;
   }
+
+  .heroImg {
+    width: 100%;
+  }
+}
+
+@media(max-width:23.44em) {
+  .actions {
+    width: 80%;
+  }
+
+  .actions>* {
+    width: 100%;
+  }
 }

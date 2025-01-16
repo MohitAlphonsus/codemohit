@@ -20,7 +20,6 @@ export default function Footer() {
 							<a href="mohitdalphonso@gmail.com" className={styles.footerText}>
 								mohitdalphonso@gmail.com
 							</a>
-							<br />
 							<a href="tel:+919518359623" className={styles.footerText}>
 								+919518359623
 							</a>
