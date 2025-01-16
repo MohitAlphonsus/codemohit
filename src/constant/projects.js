@@ -1,5 +1,6 @@
 import projectFlavorscapeImg from '../assets/project-snapshots/project-flavorscape.png';
 import projcetOmnifoodImg from '../assets/project-snapshots/project-omnifood.png';
+import projectQuizzyImg from '../assets/project-snapshots/project-quizzy.png';
 
 export const PROJECTS = [
 	{
@@ -19,5 +20,14 @@ export const PROJECTS = [
 		projectLink: 'https://mohitalphonsus.github.io/Omnifood/',
 		githubLink: 'https://github.com/MohitAlphonsus/Omnifood',
 		snapshot: projcetOmnifoodImg,
+	},
+	{
+		id: 'project3',
+		title: 'QuizzyQ',
+		desc: 'Quizz app with four different quizz section. Fun to play and learn to increase knowledge.',
+		stacks: ['React', 'React-Icons', 'React-Router', 'Styled-Component'],
+		projectLink: 'https://quizzyq.netlify.app/quizzapp',
+		githubLink: 'https://github.com/MohitAlphonsus/QuizzyQ',
+		snapshot: projectQuizzyImg,
 	},
 ];
