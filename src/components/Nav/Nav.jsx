@@ -3,6 +3,7 @@ import styles from './Nav.module.css';
 import profile from '../../assets/profile.jpeg';
 const profileStyle = {
 	backgroundImage: `url(${profile})`,
+	filter: 'saturate(0.5)',
 };
 
 export default function Nav() {
